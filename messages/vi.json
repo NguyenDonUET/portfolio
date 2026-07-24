@@ -1,0 +1,154 @@
+{
+  "personal": {
+    "title": "Kỹ sư Frontend Cao cấp",
+    "bio": "Với hơn 9 năm kinh nghiệm, tôi thiết kế và phát triển các trải nghiệm web hiệu năng cao bằng React, Next.js và TypeScript—kết nối hệ thống thiết kế, khả năng tiếp cận và những cải thiện Core Web Vitals đo lường được.",
+    "location": "Austin, TX"
+  },
+  "nav": {
+    "about": "Giới thiệu",
+    "projects": "Dự án",
+    "experience": "Kinh nghiệm",
+    "skills": "Kỹ năng",
+    "contact": "Liên hệ"
+  },
+  "language": {
+    "label": "Ngôn ngữ",
+    "en": "English",
+    "vi": "Tiếng Việt"
+  },
+  "hero": {
+    "availability": "Sẵn sàng nhận dự án mới",
+    "viewWork": "Xem dự án",
+    "contactMe": "Liên hệ với tôi",
+    "basedIn": "Sống tại {location}"
+  },
+  "about": {
+    "eyebrow": "Giới thiệu",
+    "title": "Xây dựng giao diện nhanh và có chủ đích",
+    "p1": "Tôi chuyên về phát triển sản phẩm với React và Next.js—hệ thống thiết kế, ngân sách hiệu năng và những chi tiết tinh tế giúp các giao diện phức tạp trở nên đơn giản. Tôi phối hợp chặt chẽ với đội thiết kế và backend để xây dựng kiến trúc frontend bền vững.",
+    "p2": "Ngoài việc phát triển tính năng, tôi chú trọng tài liệu, đào tạo và chất lượng đo lường được: kiểm tra khả năng tiếp cận, Core Web Vitals và thiết kế API component có thể mở rộng cho nhiều nhóm."
+  },
+  "projects": {
+    "eyebrow": "Dự án",
+    "title": "Dự án tiêu biểu",
+    "description": "Các giao diện sản phẩm, hệ thống thiết kế và sản phẩm tập trung vào hiệu năng từ những vai trò gần đây.",
+    "featured": "Nổi bật",
+    "viewDetails": "Xem chi tiết",
+    "viewDetailsFor": "Xem chi tiết dự án {title}",
+    "responsibilities": "Trách nhiệm của tôi",
+    "live": "Trực tiếp",
+    "code": "Mã nguồn",
+    "viewCode": "Xem mã nguồn",
+    "liveDemo": "Bản demo",
+    "items": {
+      "proj-01": {
+        "title": "Đóng góp Thư viện Component",
+        "shortDescription": "Thư viện component React + TypeScript tái sử dụng được áp dụng trên các sản phẩm của nhóm.",
+        "fullDescription": "Đóng góp vào một thư viện component React dùng chung, chuẩn hóa các button, form, modal và bảng dữ liệu trên nhiều ứng dụng nội bộ. Phối hợp chặt chẽ với một kỹ sư cao cấp và nhà thiết kế để chuyển các thiết kế Figma thành component dễ tiếp cận, có tài liệu đầy đủ kèm Storybook.",
+        "responsibilities": [
+          "Xây dựng hơn 15 component tái sử dụng từ thiết kế Figma bằng React, TypeScript và Tailwind CSS.",
+          "Viết Storybook và tài liệu sử dụng để các lập trình viên khác áp dụng component nhanh chóng.",
+          "Bổ sung điều hướng bàn phím và thuộc tính ARIA cho các component tương tác để đạt chuẩn WCAG AA.",
+          "Review PR của đồng nghiệp và hỗ trợ chuyển hai ứng dụng cũ sang thư viện dùng chung."
+        ]
+      },
+      "proj-02": {
+        "title": "Giao diện Bảng điều khiển Phân tích",
+        "shortDescription": "Bảng điều khiển phân tích nội bộ với biểu đồ tương tác, bộ lọc và chế độ xem theo vai trò.",
+        "fullDescription": "Tham gia xây dựng bảng điều khiển phân tích bằng Next.js cho đội chăm sóc khách hàng. Triển khai các chế độ xem biểu đồ, bộ điều khiển lọc và lớp lấy dữ liệu từ REST API, tập trung vào bố cục responsive cùng trạng thái tải và trạng thái rỗng rõ ràng.",
+        "responsibilities": [
+          "Triển khai chế độ xem biểu đồ và bảng tương tác với Recharts và TanStack Query.",
+          "Xây dựng bộ điều khiển lọc và khoảng ngày với trạng thái đồng bộ trên URL để chia sẻ được.",
+          "Thêm skeleton loader và trạng thái rỗng để cải thiện cảm nhận về thời gian tải.",
+          "Sửa các lỗi bố cục đa trình duyệt và làm bảng điều khiển responsive tới cỡ máy tính bảng."
+        ]
+      },
+      "proj-03": {
+        "title": "Làm mới Trang Marketing",
+        "shortDescription": "Xây dựng lại trang marketing của công ty trên Next.js, tập trung vào hiệu năng và SEO.",
+        "fullDescription": "Xây dựng lại trang marketing công khai từ một template cũ sang Next.js. Triển khai các khối trang tái sử dụng, tối ưu hình ảnh và cải thiện điểm Lighthouse, dựa trên thiết kế bàn giao từ Figma.",
+        "responsibilities": [
+          "Chuyển thiết kế trang từ Figma thành các khối Next.js responsive, tái sử dụng được.",
+          "Tối ưu hình ảnh với next/image và lazy-loading, cải thiện điểm hiệu năng Lighthouse từ 68 lên 95.",
+          "Bổ sung markup ngữ nghĩa và metadata để cải thiện SEO và bản xem trước khi chia sẻ mạng xã hội.",
+          "Thiết lập tích hợp CMS đơn giản để bộ phận marketing chỉnh sửa nội dung mà không cần deploy."
+        ]
+      },
+      "proj-04": {
+        "title": "Tính năng Bảng Công việc",
+        "shortDescription": "Tính năng bảng kanban với kéo-thả, được thêm vào ứng dụng năng suất nhóm hiện có.",
+        "fullDescription": "Thêm tính năng bảng kanban vào một ứng dụng React hiện có. Triển khai sắp xếp thẻ bằng kéo-thả, cập nhật lạc quan khi di chuyển thẻ và các hiệu ứng vi tương tác mượt mà với Framer Motion.",
+        "responsibilities": [
+          "Xây dựng sắp xếp thẻ và cột bằng kéo-thả với dnd-kit.",
+          "Kết nối cập nhật lạc quan để việc di chuyển thẻ diễn ra tức thì, có hoàn tác khi API lỗi.",
+          "Quản lý trạng thái bảng bằng Zustand và thêm các chuyển động tinh tế với Framer Motion.",
+          "Viết unit test cho reducer của bảng và logic sắp xếp lại."
+        ]
+      },
+      "proj-05": {
+        "title": "Trang Tài liệu với MDX",
+        "shortDescription": "Trang tài liệu cho lập trình viên xây bằng Next.js và MDX, kèm tìm kiếm.",
+        "fullDescription": "Xây dựng trang tài liệu nội bộ cho lập trình viên bằng Next.js và MDX để kỹ sư có thể xuất bản hướng dẫn bằng Markdown. Bổ sung tìm kiếm phía client và điều hướng thanh bên theo phiên bản.",
+        "responsibilities": [
+          "Thiết lập render MDX với ánh xạ component tùy chỉnh cho callout và khối mã.",
+          "Triển khai tìm kiếm phía client trên nội dung tài liệu với đối sánh mờ.",
+          "Xây dựng điều hướng thanh bên và mục lục trong trang.",
+          "Viết tài liệu quy trình biên soạn để đồng nghiệp tự thêm trang."
+        ]
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Kinh nghiệm",
+    "title": "Nơi tôi đã đóng góp",
+    "description": "Các vai trò tập trung vào frontend sản phẩm, hệ thống thiết kế và hiệu năng.",
+    "present": "Hiện tại",
+    "items": {
+      "exp-01": {
+        "role": "Kỹ sư Frontend Cao cấp",
+        "location": "Austin, TX (Kết hợp)",
+        "description": [
+          "Dẫn dắt kiến trúc frontend cho nền tảng khách hàng (Next.js App Router, React 19, TypeScript).",
+          "Phụ trách áp dụng hệ thống thiết kế—giảm khoảng 60% giao diện trùng lặp trên bốn nhóm sản phẩm.",
+          "Thúc đẩy chương trình Core Web Vitals; cải thiện LCP trên các tuyến lưu lượng cao 38%.",
+          "Đào tạo kỹ sư về khả năng tiếp cận, ngân sách hiệu năng và thiết kế API component."
+        ]
+      },
+      "exp-02": {
+        "role": "Kỹ sư Frontend",
+        "location": "Từ xa",
+        "description": [
+          "Xây dựng các giao diện biên tập và thương mại phục vụ hàng triệu phiên mỗi tháng.",
+          "Giới thiệu thư viện component và kiểm thử hồi quy giao diện trên các trang thương hiệu.",
+          "Phối hợp với đội thiết kế để triển khai bố cục responsive và hướng dẫn chuyển động."
+        ]
+      },
+      "exp-03": {
+        "role": "Kỹ sư Giao diện",
+        "location": "Denver, CO",
+        "description": [
+          "Phát triển các SPA và trang marketing cho khách hàng với sự chú trọng vào độ hoàn thiện và khả năng bảo trì.",
+          "Thiết lập chuẩn linting, định dạng và review PR cho đội frontend."
+        ]
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Kỹ năng",
+    "title": "Công cụ tôi dùng hằng ngày",
+    "description": "Một bộ công cụ thực dụng cho giao diện sản phẩm, công việc hệ thống và hiệu năng đo lường được.",
+    "categories": {
+      "languages": "Ngôn ngữ & Framework",
+      "ui": "Giao diện & Hệ thống Thiết kế",
+      "performance": "Hiệu năng & Công cụ"
+    }
+  },
+  "contact": {
+    "eyebrow": "Liên hệ",
+    "title": "Cùng nhau tạo nên sản phẩm chất lượng",
+    "description": "Sẵn sàng cho các vai trò frontend cao cấp, tư vấn hệ thống thiết kế và công việc sản phẩm tập trung vào hiệu năng."
+  },
+  "footer": {
+    "builtWith": "Xây dựng với Next.js & TypeScript."
+  }
+}

@@ -1,0 +1,70 @@
+---
+description: Design System, UI/UX, and Design Token guidelines for professional web frontends.
+globs: **/*.tsx, **/*.jsx, **/*.css
+alwaysApply: true
+---
+
+# UI/UX & Design System Architecture Rules
+
+You are a Senior Design Engineer. Your goal is to generate clean, highly accessible, accessible-first, and polished UI using strict design tokens and systematic component architecture.
+
+---
+
+## 1. Design Token System
+
+NEVER hardcode hex codes (`#123456`), pixel paddings (`padding: 13px`), or arbitrary font sizes in inline styles or utilities. Use semantic tokens.
+
+### A. Color Token Structure (Tailwind CSS / CSS Variables)
+
+- **Primary / Brand:** `bg-primary`, `text-primary-foreground`
+- **Surface / Background:** `bg-background`, `bg-card`, `bg-muted`
+- **Text / Foreground:** `text-foreground`, `text-muted-foreground`
+- **Feedback States:** `bg-destructive`, `text-success`, `border-warning`
+- **Border & Ring:** `border-border`, `ring-ring`
+
+### B. Typography Scale
+
+Use predefined modular type tokens:
+
+- **Display:** `text-4xl font-extrabold tracking-tight`
+- **Heading 1:** `text-3xl font-bold tracking-tight`
+- **Heading 2:** `text-2xl font-semibold tracking-tight`
+- **Body:** `text-base leading-relaxed`
+- **Caption/Small:** `text-sm text-muted-foreground`
+
+### C. Spacing & Layout Constraints
+
+- Use standard 4px scale spacing multiples (`gap-2`, `gap-4`, `p-6`, `space-y-4`).
+- Section padding rule: Mobile `py-8 px-4`, Desktop `py-16 px-8 max-w-7xl mx-auto`.
+
+---
+
+## 2. Component Composition & Architecture
+
+- **Prefer Primitive UI Components:** Build pages using pre-packaged component systems (shadcn/ui, Radix UI, or daisyUI) rather than reinventing raw HTML controls.
+- **Compound Components over Prop Drilling:** Use `<Card>`, `<CardHeader>`, `<CardContent>`, `<CardFooter>` instead of passing 10 custom props to a monolithic container.
+- **Micro-Interactions & States:** EVERY interactive element must explicitly define:
+  1. Default state
+  2. `:hover` state (e.g., `hover:bg-accent`)
+  3. `:focus-visible` state (e.g., `focus-visible:ring-2 focus-visible:ring-ring`)
+  4. `:disabled` state (e.g., `disabled:opacity-50 disabled:pointer-events-none`)
+  5. Loading state (with spinner/skeleton)
+
+---
+
+## 3. Core UX Anti-Patterns to Avoid
+
+❌ **No "AI-Glow":** Avoid purple/pink linear gradients on pure black backgrounds unless explicitly requested.
+❌ **No Silent Actions:** Async buttons MUST show a loading indicator or disable state while fetching.
+❌ **No Text Overflow:** Long titles must use `truncate` or `line-clamp-2`.
+❌ **No Layout Shifts (CLS):** Provide proper Skeleton components for initial loading states.
+❌ **No Missing Empty States:** Lists/Tables must render a helpful `<EmptyState>` component when empty.
+
+---
+
+## 4. Accessibility Rules (WCAG 2.1 AA)
+
+- Touch targets must be at least `44x44px` (`min-h-[44px] min-w-[44px]`).
+- Contrast ratio must meet `4.5:1` minimum for normal text.
+- Use semantic tags (`<nav>`, `<main>`, `<header>`, `<footer>`, `<article>`).
+- Non-text interactive elements must have `aria-label`.

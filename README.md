@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Developer Portfolio
+
+A modern, production-ready personal portfolio built with the Next.js App Router. It presents a developer's work through a fast, animated, and fully responsive single-page experience — with light/dark theming, scroll-synced navigation, and accessible interactive project detail modals.
+
+The site is content-driven: everything you see is rendered from a single typed data module, so you can make it your own by editing one file — no component changes required.
+
+## Highlights
+
+- **Polished, motion-first UI** — subtle, GPU-accelerated animations (Framer Motion) with staggered section reveals and refined hover states, all respecting `prefers-reduced-motion`.
+- **Light & dark mode** — class-based theme toggle with no flash on load, persisted to `localStorage`.
+- **Interactive project cards** — each project opens an accessible modal (Base UI Dialog) detailing the full description and the candidate's responsibilities.
+- **Scroll-synced navigation** — the side/mobile nav highlights the active section as you scroll, including the last section at the bottom of the page.
+- **Accessible by default** — semantic landmarks, ARIA labels, visible focus states, and WCAG-minded color contrast in both themes.
+- **Mobile-first & responsive** — fluid layouts from small screens up, with a drawer-style mobile menu.
+- **Strictly typed** — TypeScript in strict mode with domain types shared across data and UI.
+
+## Stack
+
+- Next.js App Router + React 19 + TypeScript (strict)
+- Tailwind CSS v4 with design tokens + `clsx` + `tailwind-merge`
+- Framer Motion for animation
+- Base UI for accessible primitives (Dialog, Tooltip)
+- Lucide React for icons
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev      # start the dev server at http://localhost:3000
+pnpm build    # production build
+pnpm start    # serve the production build
+pnpm lint     # run ESLint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+  app/                 # Root layout, home page, globals
+  components/ui/        # Primitives: Button, Card, Badge, Dialog, Tooltip, Container, ...
+  components/sections/ # Hero, About, Projects, ProjectCard, Experience, Skills, Contact, Footer
+  components/common/   # Navbar, SideNav, MobileMenu, ThemeToggle
+  data/                # portfolioData.ts — all site content
+  types/               # portfolio.ts — shared domain types
+  hooks/               # useScrollSpy, useHeaderScroll
+  lib/                 # cn() helper
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Customizing Content
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All content — personal info, projects (with per-project responsibilities), experience, and skills — lives in `src/data/portfolioData.ts`, typed against `src/types/portfolio.ts`. Update that file to personalize the portfolio; the UI stays in sync automatically.

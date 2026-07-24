@@ -1,0 +1,154 @@
+{
+  "personal": {
+    "title": "Senior Frontend Engineer",
+    "bio": "With 9+ years of experience, I design and ship high-performance web experiences with React, Next.js, and TypeScript—bridging design systems, accessibility, and measurable Core Web Vitals gains.",
+    "location": "Austin, TX"
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "vi": "Tiếng Việt"
+  },
+  "hero": {
+    "availability": "Available for new projects",
+    "viewWork": "View Work",
+    "contactMe": "Contact Me",
+    "basedIn": "Based in {location}"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "Building interfaces that feel fast and intentional",
+    "p1": "I specialize in React and Next.js product work—design systems, performance budgets, and the craft details that make complex UIs feel simple. I partner closely with design and backend teams to ship durable frontend architecture.",
+    "p2": "Outside feature delivery, I invest in documentation, mentoring, and measurable quality: accessibility checks, Core Web Vitals, and component APIs that scale across squads."
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Selected work",
+    "description": "Product surfaces, design systems, and performance-focused builds from recent roles.",
+    "featured": "Featured",
+    "viewDetails": "View details",
+    "viewDetailsFor": "View details for {title}",
+    "responsibilities": "My responsibilities",
+    "live": "Live",
+    "code": "Code",
+    "viewCode": "View Code",
+    "liveDemo": "Live Demo",
+    "items": {
+      "proj-01": {
+        "title": "Component Library Contributions",
+        "shortDescription": "Reusable React + TypeScript component library adopted across the team's product surfaces.",
+        "fullDescription": "Contributed to a shared React component library that standardized buttons, forms, modals, and data tables across several internal apps. Worked closely with a senior engineer and our designer to translate Figma specs into accessible, well-documented components with Storybook stories.",
+        "responsibilities": [
+          "Built 15+ reusable components from Figma designs using React, TypeScript, and Tailwind CSS.",
+          "Wrote Storybook stories and usage docs so other developers could adopt components quickly.",
+          "Added keyboard navigation and ARIA attributes to interactive components to meet WCAG AA.",
+          "Reviewed teammates' PRs and helped migrate two legacy apps onto the shared library."
+        ]
+      },
+      "proj-02": {
+        "title": "Analytics Dashboard UI",
+        "shortDescription": "Internal analytics dashboard with interactive charts, filters, and role-based views.",
+        "fullDescription": "Helped build a Next.js analytics dashboard used by the customer-success team. Implemented the chart views, filter controls, and data-fetching layer against a REST API, focusing on responsive layouts and clear loading and empty states.",
+        "responsibilities": [
+          "Implemented interactive chart and table views with Recharts and TanStack Query.",
+          "Built filter and date-range controls with URL-synced state for shareable views.",
+          "Added skeleton loaders and empty states to smooth out perceived load time.",
+          "Fixed cross-browser layout bugs and made the dashboard responsive down to tablet."
+        ]
+      },
+      "proj-03": {
+        "title": "Marketing Site Revamp",
+        "shortDescription": "Rebuilt the company marketing site on Next.js with a focus on performance and SEO.",
+        "fullDescription": "Rebuilt the public marketing site from a legacy template onto Next.js. Implemented reusable page sections, optimized images, and improved Lighthouse scores, working from designs handed off in Figma.",
+        "responsibilities": [
+          "Converted Figma page designs into responsive, reusable Next.js sections.",
+          "Optimized images with next/image and lazy-loading, improving Lighthouse performance from 68 to 95.",
+          "Added semantic markup and metadata to improve SEO and social sharing previews.",
+          "Set up a simple CMS integration so marketing could edit copy without a deploy."
+        ]
+      },
+      "proj-04": {
+        "title": "Task Board Feature",
+        "shortDescription": "Kanban board feature with drag-and-drop, added to an existing team productivity app.",
+        "fullDescription": "Added a kanban board feature to an existing React app. Implemented drag-and-drop card ordering, optimistic updates when moving cards, and smooth micro-interactions with Framer Motion.",
+        "responsibilities": [
+          "Built drag-and-drop card and column reordering with dnd-kit.",
+          "Wired optimistic updates so card moves felt instant, with rollback on API errors.",
+          "Managed board state with Zustand and added subtle Framer Motion transitions.",
+          "Wrote unit tests for the board reducer and reordering logic."
+        ]
+      },
+      "proj-05": {
+        "title": "Docs Site with MDX",
+        "shortDescription": "Developer documentation site built with Next.js and MDX, including search.",
+        "fullDescription": "Built an internal developer documentation site using Next.js and MDX so engineers could publish guides in Markdown. Added client-side search and a versioned sidebar navigation.",
+        "responsibilities": [
+          "Set up MDX rendering with a custom component mapping for callouts and code blocks.",
+          "Implemented client-side search over the docs content with fuzzy matching.",
+          "Built the sidebar navigation and on-page table of contents.",
+          "Documented the authoring workflow so teammates could add pages independently."
+        ]
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Experience",
+    "title": "Where I've shipped",
+    "description": "Roles focused on product frontend, design systems, and performance.",
+    "present": "Present",
+    "items": {
+      "exp-01": {
+        "role": "Senior Frontend Engineer",
+        "location": "Austin, TX (Hybrid)",
+        "description": [
+          "Lead frontend architecture for the customer platform (Next.js App Router, React 19, TypeScript).",
+          "Own design system adoption—reduced duplicate UI by ~60% across four product squads.",
+          "Drove Core Web Vitals program; improved LCP on high-traffic routes by 38%.",
+          "Mentor engineers on accessibility, performance budgets, and component API design."
+        ]
+      },
+      "exp-02": {
+        "role": "Frontend Engineer",
+        "location": "Remote",
+        "description": [
+          "Built editorial and commerce surfaces serving millions of monthly sessions.",
+          "Introduced component library and visual regression testing across brand sites.",
+          "Partnered with design to ship responsive layouts and motion guidelines."
+        ]
+      },
+      "exp-03": {
+        "role": "UI Engineer",
+        "location": "Denver, CO",
+        "description": [
+          "Delivered client SPAs and marketing sites with a focus on polish and maintainability.",
+          "Established linting, formatting, and PR review standards for the frontend team."
+        ]
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "title": "Tools I reach for daily",
+    "description": "A practical stack for product UI, systems work, and measurable performance.",
+    "categories": {
+      "languages": "Languages & Frameworks",
+      "ui": "UI & Design Systems",
+      "performance": "Performance & Tooling"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's build something sharp",
+    "description": "Open to senior frontend roles, design-system consulting, and performance-focused product work."
+  },
+  "footer": {
+    "builtWith": "Built with Next.js & TypeScript."
+  }
+}
