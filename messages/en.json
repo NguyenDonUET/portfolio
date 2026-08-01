@@ -16,6 +16,9 @@
     "en": "English",
     "vi": "Tiếng Việt"
   },
+  "chrome": {
+    "scrollToTop": "Scroll to top"
+  },
   "hero": {
     "availability": "Available for new projects",
     "viewWork": "View Work",

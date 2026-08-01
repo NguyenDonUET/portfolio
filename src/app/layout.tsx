@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Navbar } from "@/components/common/Navbar";
+import { ScrollToTop } from "@/components/common/ScrollToTop";
 import { Footer } from "@/components/sections/Footer";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { portfolioData } from "@/data/portfolioData";
@@ -81,6 +82,7 @@ export default async function RootLayout({
             <Navbar />
             <main className="flex-1">{children}</main>
             <Footer />
+            <ScrollToTop />
           </TooltipProvider>
         </NextIntlClientProvider>
       </body>

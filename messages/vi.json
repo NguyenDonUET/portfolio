@@ -16,6 +16,9 @@
     "en": "English",
     "vi": "Tiếng Việt"
   },
+  "chrome": {
+    "scrollToTop": "Lên đầu trang"
+  },
   "hero": {
     "availability": "Sẵn sàng nhận dự án mới",
     "viewWork": "Xem dự án",
