@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import { useLenis } from "lenis/react";
 import { X } from "lucide-react";
 import type { NavItem } from "@/types/portfolio";
 import { cn } from "@/lib/utils";
@@ -14,18 +15,22 @@ export interface MobileMenuProps {
 }
 
 export function MobileMenu({ open, onClose, items, activeId }: MobileMenuProps) {
+  const lenis = useLenis();
+
   useEffect(() => {
     if (!open) return;
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") onClose();
     };
     document.body.style.overflow = "hidden";
+    lenis?.stop();
     window.addEventListener("keydown", onKeyDown);
     return () => {
       document.body.style.overflow = "";
+      lenis?.start();
       window.removeEventListener("keydown", onKeyDown);
     };
-  }, [open, onClose]);
+  }, [open, onClose, lenis]);
 
   if (!open) return null;
 

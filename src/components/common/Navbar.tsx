@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useLenis } from "lenis/react";
 import { useTranslations } from "next-intl";
 import { Menu } from "lucide-react";
 import { portfolioData } from "@/data/portfolioData";
@@ -24,6 +25,7 @@ export function Navbar() {
   const scrolled = useHeaderScroll();
   const activeId = useScrollSpy(sectionIds);
   const tNav = useTranslations("nav");
+  const lenis = useLenis();
 
   const items: NavItem[] = portfolioData.navigation.map((item) => ({
     href: item.href,
@@ -45,7 +47,7 @@ export function Navbar() {
             href="/"
             onClick={(e) => {
               e.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
+              lenis?.scrollTo(0);
             }}
             className="font-display text-lg tracking-tight text-foreground transition-colors hover:text-accent"
           >

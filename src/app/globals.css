@@ -130,14 +130,11 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* Clears sticky header (h-16) when Lenis/native scrollIntoView hits anchors */
+  scroll-padding-top: 5rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
   *,
   *::before,
   *::after {

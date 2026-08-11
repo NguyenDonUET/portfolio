@@ -4,9 +4,11 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Navbar } from "@/components/common/Navbar";
 import { ScrollToTop } from "@/components/common/ScrollToTop";
+import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 import { Footer } from "@/components/sections/Footer";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { portfolioData } from "@/data/portfolioData";
+import "lenis/dist/lenis.css";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -65,7 +67,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${geistSans.variable} ${geistMono.variable} h-full scroll-smooth antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <head>
@@ -78,12 +80,14 @@ export default async function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <NextIntlClientProvider>
-          <TooltipProvider delay={150}>
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-            <ScrollToTop />
-          </TooltipProvider>
+          <SmoothScrollProvider>
+            <TooltipProvider delay={150}>
+              <Navbar />
+              <main className="flex-1">{children}</main>
+              <Footer />
+              <ScrollToTop />
+            </TooltipProvider>
+          </SmoothScrollProvider>
         </NextIntlClientProvider>
       </body>
     </html>
