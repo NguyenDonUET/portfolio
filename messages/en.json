@@ -1,8 +1,8 @@
 {
   "personal": {
-    "title": "Senior Frontend Engineer",
-    "bio": "With 9+ years of experience, I design and ship high-performance web experiences with React, Next.js, and TypeScript—bridging design systems, accessibility, and measurable Core Web Vitals gains.",
-    "location": "Austin, TX"
+    "title": "Frontend Developer",
+    "bio": "With 5 years of experience as a frontend developer, I design and ship high-performance web experiences with React, Next.js, and TypeScript—bridging design systems, accessibility, and measurable Core Web Vitals gains.",
+    "location": "Hanoi, Vietnam"
   },
   "nav": {
     "about": "About",
@@ -34,69 +34,78 @@
   "projects": {
     "eyebrow": "Projects",
     "title": "Selected work",
-    "description": "Product surfaces, design systems, and performance-focused builds from recent roles.",
+    "description": "Shipped product UI, a shared component kit, and performance-first surfaces from recent roles.",
     "featured": "Featured",
     "viewDetails": "View details",
     "viewDetailsFor": "View details for {title}",
     "responsibilities": "My responsibilities",
     "live": "Live",
-    "code": "Code",
-    "viewCode": "View Code",
     "liveDemo": "Live Demo",
     "items": {
       "proj-01": {
-        "title": "Component Library Contributions",
-        "shortDescription": "Reusable React + TypeScript component library adopted across the team's product surfaces.",
-        "fullDescription": "Contributed to a shared React component library that standardized buttons, forms, modals, and data tables across several internal apps. Worked closely with a senior engineer and our designer to translate Figma specs into accessible, well-documented components with Storybook stories.",
+        "title": "Nova Design System",
+        "shortDescription": "The team's source-of-truth React kit—tokens, primitives, and docs that replaced one-off UI across four products.",
+        "fullDescription": "Built Nova as a versioned React + TypeScript package so product squads stopped restyling the same button. Primitives (dialog, combobox, data table, form controls) map 1:1 to Figma, ship with Storybook, and are typed so a token change is a single package bump instead of a repo-wide hunt.",
         "responsibilities": [
-          "Built 15+ reusable components from Figma designs using React, TypeScript, and Tailwind CSS.",
-          "Wrote Storybook stories and usage docs so other developers could adopt components quickly.",
-          "Added keyboard navigation and ARIA attributes to interactive components to meet WCAG AA.",
-          "Reviewed teammates' PRs and helped migrate two legacy apps onto the shared library."
+          "Shipped 20+ typed primitives with compound APIs, variants, and design-token theming.",
+          "Wired Storybook + a11y addon into CI so keyboard traps and contrast failures blocked merge.",
+          "Made every interactive primitive WCAG AA: focus order, ARIA, and reduced-motion paths.",
+          "Migrated two legacy apps onto Nova and cut duplicated UI styles by more than half."
         ]
       },
       "proj-02": {
-        "title": "Analytics Dashboard UI",
-        "shortDescription": "Internal analytics dashboard with interactive charts, filters, and role-based views.",
-        "fullDescription": "Helped build a Next.js analytics dashboard used by the customer-success team. Implemented the chart views, filter controls, and data-fetching layer against a REST API, focusing on responsive layouts and clear loading and empty states.",
+        "title": "Pulse Analytics",
+        "shortDescription": "A live customer-success dashboard: charts, tables, and shareable filters that stay in sync with one query cache.",
+        "fullDescription": "Owned the Pulse UI in Next.js—the screen CS uses all day. Charts and tables read from the same TanStack Query cache, filters live in the URL, and role-gated widgets swap density without forking the page. Built for 3G office Wi-Fi: skeletons, prefetch, and no layout jump when data lands.",
         "responsibilities": [
-          "Implemented interactive chart and table views with Recharts and TanStack Query.",
-          "Built filter and date-range controls with URL-synced state for shareable views.",
-          "Added skeleton loaders and empty states to smooth out perceived load time.",
-          "Fixed cross-browser layout bugs and made the dashboard responsive down to tablet."
+          "Designed a single data layer so charts, tables, and KPI tiles never disagree.",
+          "Encoded filters and date ranges in the URL so a 30-day customer view is a bookmark, not a screenshot.",
+          "Prefetch + skeleton strategy that kept the board usable on slow networks.",
+          "Role-gated widgets: managers and agents share one route, different density, zero duplicate pages."
         ]
       },
       "proj-03": {
-        "title": "Marketing Site Revamp",
-        "shortDescription": "Rebuilt the company marketing site on Next.js with a focus on performance and SEO.",
-        "fullDescription": "Rebuilt the public marketing site from a legacy template onto Next.js. Implemented reusable page sections, optimized images, and improved Lighthouse scores, working from designs handed off in Figma.",
+        "title": "Commerce Edge",
+        "shortDescription": "Rebuilt the public marketing site on Next.js—Lighthouse 68 → 95, CMS-editable sections, search-ready markup.",
+        "fullDescription": "Tore down a sluggish template site and rebuilt Commerce Edge on the App Router. Route-level splitting, next/image, and subsetted fonts did the performance work; semantic sections and Open Graph tags did the SEO work. Marketing edits copy in a CMS and publishes without waiting on a deploy.",
         "responsibilities": [
-          "Converted Figma page designs into responsive, reusable Next.js sections.",
-          "Optimized images with next/image and lazy-loading, improving Lighthouse performance from 68 to 95.",
-          "Added semantic markup and metadata to improve SEO and social sharing previews.",
-          "Set up a simple CMS integration so marketing could edit copy without a deploy."
+          "Rebuilt the site as composable Next.js sections from Figma, mobile-first.",
+          "Lifted Lighthouse Performance from 68 to 95 via images, fonts, and route splitting.",
+          "Shipped structured data, metadata, and OG previews so product pages could rank and share cleanly.",
+          "Connected a CMS so campaigns ship as content, not as a frontend ticket."
+        ]
+      },
+      "proj-06": {
+        "title": "Lumen Markets",
+        "shortDescription": "Multi-tenant ecommerce for digital media—one Next.js app, many branded storefronts selling photos, video, audio, and 3D.",
+        "fullDescription": "Lumen is a marketplace platform: each tenant gets a custom domain, catalog, and theme, all from one deploy. Shoppers preview assets, pick a license tier, pay, and download immediately. Tenant isolation is the product—cart, checkout, and SEO never leak across stores. Built the storefront and tenant shell in Next.js so a new brand is config, not a fork.",
+        "responsibilities": [
+          "Resolved tenant from hostname and loaded brand tokens, catalog, and locale without a rebuild.",
+          "Shipped PDPs with media preview, license tiers, and post-payment download that never mixed tenant files.",
+          "Isolated cart and Stripe checkout per store so two sites on the same app cannot see each other's orders.",
+          "Built the merchant publish flow: upload assets, set prices and licenses, go live on a custom domain."
         ]
       },
       "proj-04": {
-        "title": "Task Board Feature",
-        "shortDescription": "Kanban board feature with drag-and-drop, added to an existing team productivity app.",
-        "fullDescription": "Added a kanban board feature to an existing React app. Implemented drag-and-drop card ordering, optimistic updates when moving cards, and smooth micro-interactions with Framer Motion.",
+        "title": "Flowboard",
+        "shortDescription": "A kanban surface dropped into an existing app—instant card moves, conflict-safe updates, motion that respects reduced-motion.",
+        "fullDescription": "Added Flowboard without rewriting the product. Cards and columns reorder with dnd-kit, Zustand applies the move instantly, and a failed API call rolls the board back. Motion is a 200–400ms ease, not a spectacle; prefers-reduced-motion jumps. The reorder reducer is covered so drag bugs don't ship.",
         "responsibilities": [
-          "Built drag-and-drop card and column reordering with dnd-kit.",
-          "Wired optimistic updates so card moves felt instant, with rollback on API errors.",
-          "Managed board state with Zustand and added subtle Framer Motion transitions.",
-          "Wrote unit tests for the board reducer and reordering logic."
+          "Built card and column drag-and-drop that doesn't fight page scroll or multi-select.",
+          "Optimistic Zustand updates with rollback on conflict so moves feel native, not 'saving…'.",
+          "Framer Motion transitions that honor reduced-motion instead of ignoring it.",
+          "Unit-tested the reorder reducer and edge cases (empty columns, rapid consecutive moves)."
         ]
       },
       "proj-05": {
-        "title": "Docs Site with MDX",
-        "shortDescription": "Developer documentation site built with Next.js and MDX, including search.",
-        "fullDescription": "Built an internal developer documentation site using Next.js and MDX so engineers could publish guides in Markdown. Added client-side search and a versioned sidebar navigation.",
+        "title": "Aperture Docs",
+        "shortDescription": "MDX docs with live examples, keyboard-first search, and a versioned sidebar—engineers publish in Markdown.",
+        "fullDescription": "Aperture is the internal docs site: MDX for guides, live component examples in the page, fuzzy search across headings and body, and a sticky table of contents. Authors add a Markdown file; they don't touch the renderer. Built so onboarding doesn't depend on whoever last remembered how the repo works.",
         "responsibilities": [
-          "Set up MDX rendering with a custom component mapping for callouts and code blocks.",
-          "Implemented client-side search over the docs content with fuzzy matching.",
-          "Built the sidebar navigation and on-page table of contents.",
-          "Documented the authoring workflow so teammates could add pages independently."
+          "MDX pipeline with custom mapping for callouts, live previews, and typed code blocks.",
+          "Fuzzy, keyboard-first search over titles and body—open, type, jump.",
+          "Versioned sidebar plus on-page ToC so long guides stay oriented.",
+          "Authoring guide that let teammates add pages without changing build config."
         ]
       }
     }
@@ -104,34 +113,26 @@
   "experience": {
     "eyebrow": "Experience",
     "title": "Where I've shipped",
-    "description": "Roles focused on product frontend, design systems, and performance.",
+    "description": "Five years building product UI with React, Next.js, and TypeScript.",
     "present": "Present",
     "items": {
       "exp-01": {
-        "role": "Senior Frontend Engineer",
-        "location": "Austin, TX (Hybrid)",
+        "role": "Frontend Developer",
+        "location": "Hanoi, Vietnam",
         "description": [
-          "Lead frontend architecture for the customer platform (Next.js App Router, React 19, TypeScript).",
-          "Own design system adoption—reduced duplicate UI by ~60% across four product squads.",
-          "Drove Core Web Vitals program; improved LCP on high-traffic routes by 38%.",
-          "Mentor engineers on accessibility, performance budgets, and component API design."
+          "Build and maintain product pages with Next.js, React, and TypeScript.",
+          "Turn Figma designs into responsive, accessible UI with Tailwind CSS.",
+          "Wire screens to REST APIs with TanStack Query, including loading and empty states.",
+          "Fix bugs, improve Core Web Vitals on key routes, and review teammate PRs."
         ]
       },
       "exp-02": {
-        "role": "Frontend Engineer",
-        "location": "Remote",
+        "role": "Frontend Developer",
+        "location": "Hanoi, Vietnam",
         "description": [
-          "Built editorial and commerce surfaces serving millions of monthly sessions.",
-          "Introduced component library and visual regression testing across brand sites.",
-          "Partnered with design to ship responsive layouts and motion guidelines."
-        ]
-      },
-      "exp-03": {
-        "role": "UI Engineer",
-        "location": "Denver, CO",
-        "description": [
-          "Delivered client SPAs and marketing sites with a focus on polish and maintainability.",
-          "Established linting, formatting, and PR review standards for the frontend team."
+          "Shipped React features for editorial and marketing surfaces from design handoff.",
+          "Built reusable UI pieces and kept styles consistent across brand pages.",
+          "Wrote unit tests and worked with design to polish responsive layouts."
         ]
       }
     }
@@ -149,7 +150,7 @@
   "contact": {
     "eyebrow": "Contact",
     "title": "Let's build something sharp",
-    "description": "Open to senior frontend roles, design-system consulting, and performance-focused product work."
+    "description": "Open to frontend roles and product UI work with React, Next.js, and TypeScript."
   },
   "footer": {
     "builtWith": "Built with Next.js & TypeScript."

@@ -6,7 +6,7 @@ import type { PortfolioData } from "@/types/portfolio";
  */
 export const portfolioData: PortfolioData = {
   personal: {
-    name: "Alex Rivera",
+    name: "Don Nguyen",
     email: "alex.rivera@example.com",
     avatarUrl: "/avatar.png",
     socialLinks: {
@@ -51,6 +51,15 @@ export const portfolioData: PortfolioData = {
       image: "/projects/commerce.jpg",
     },
     {
+      id: "proj-06",
+      slug: "lumen-markets",
+      tags: ["Next.js", "TypeScript", "Multi-tenant", "Stripe", "Tailwind"],
+      featured: true,
+      liveUrl: "https://example.com/lumen",
+      repoUrl: "https://github.com/alexrivera/lumen-markets",
+      image: "/projects/lumen.jpg",
+    },
+    {
       id: "proj-04",
       slug: "task-board",
       tags: ["React", "TypeScript", "Zustand", "Framer Motion"],
@@ -73,23 +82,16 @@ export const portfolioData: PortfolioData = {
     {
       id: "exp-01",
       company: "Northwind Labs",
-      startDate: "2022-03",
+      startDate: "2023-06",
       endDate: "Present",
-      techStack: ["Next.js", "React", "TypeScript", "Tailwind", "Storybook", "Playwright"],
+      techStack: ["Next.js", "React", "TypeScript", "Tailwind", "TanStack Query"],
     },
     {
       id: "exp-02",
       company: "Brightline Media",
-      startDate: "2019-06",
-      endDate: "2022-02",
-      techStack: ["React", "TypeScript", "GraphQL", "CSS Modules", "Jest"],
-    },
-    {
-      id: "exp-03",
-      company: "Cascade Softworks",
-      startDate: "2017-01",
-      endDate: "2019-05",
-      techStack: ["JavaScript", "React", "Sass", "Webpack"],
+      startDate: "2021-08",
+      endDate: "2023-05",
+      techStack: ["React", "TypeScript", "Next.js", "CSS Modules", "Jest"],
     },
   ],
   skills: [

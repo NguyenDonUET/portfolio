@@ -1,8 +1,8 @@
 {
   "personal": {
-    "title": "Kỹ sư Frontend Cao cấp",
-    "bio": "Với hơn 9 năm kinh nghiệm, tôi thiết kế và phát triển các trải nghiệm web hiệu năng cao bằng React, Next.js và TypeScript—kết nối hệ thống thiết kế, khả năng tiếp cận và những cải thiện Core Web Vitals đo lường được.",
-    "location": "Austin, TX"
+    "title": "Lập trình viên Frontend",
+    "bio": "Với 5 năm kinh nghiệm lập trình viên frontend, tôi thiết kế và phát triển các trải nghiệm web hiệu năng cao bằng React, Next.js và TypeScript—kết nối hệ thống thiết kế, khả năng tiếp cận và những cải thiện Core Web Vitals đo lường được.",
+    "location": "Hà Nội, Việt Nam"
   },
   "nav": {
     "about": "Giới thiệu",
@@ -34,69 +34,78 @@
   "projects": {
     "eyebrow": "Dự án",
     "title": "Dự án tiêu biểu",
-    "description": "Các giao diện sản phẩm, hệ thống thiết kế và sản phẩm tập trung vào hiệu năng từ những vai trò gần đây.",
+    "description": "Giao diện sản phẩm, bộ component dùng chung và các bề mặt ưu tiên hiệu năng từ những vai trò gần đây.",
     "featured": "Nổi bật",
     "viewDetails": "Xem chi tiết",
     "viewDetailsFor": "Xem chi tiết dự án {title}",
     "responsibilities": "Trách nhiệm của tôi",
     "live": "Trực tiếp",
-    "code": "Mã nguồn",
-    "viewCode": "Xem mã nguồn",
     "liveDemo": "Bản demo",
     "items": {
       "proj-01": {
-        "title": "Đóng góp Thư viện Component",
-        "shortDescription": "Thư viện component React + TypeScript tái sử dụng được áp dụng trên các sản phẩm của nhóm.",
-        "fullDescription": "Đóng góp vào một thư viện component React dùng chung, chuẩn hóa các button, form, modal và bảng dữ liệu trên nhiều ứng dụng nội bộ. Phối hợp chặt chẽ với một kỹ sư cao cấp và nhà thiết kế để chuyển các thiết kế Figma thành component dễ tiếp cận, có tài liệu đầy đủ kèm Storybook.",
+        "title": "Hệ thống thiết kế Nova",
+        "shortDescription": "Bộ kit React làm nguồn sự thật của nhóm—token, primitive và tài liệu thay thế UI rời rạc trên bốn sản phẩm.",
+        "fullDescription": "Xây dựng Nova thành gói React + TypeScript có phiên bản để các nhóm sản phẩm không còn style lại cùng một nút. Các primitive (dialog, combobox, bảng dữ liệu, form) khớp 1:1 với Figma, kèm Storybook, và được type chặt để một thay đổi token chỉ cần bump package thay vì soi cả repo.",
         "responsibilities": [
-          "Xây dựng hơn 15 component tái sử dụng từ thiết kế Figma bằng React, TypeScript và Tailwind CSS.",
-          "Viết Storybook và tài liệu sử dụng để các lập trình viên khác áp dụng component nhanh chóng.",
-          "Bổ sung điều hướng bàn phím và thuộc tính ARIA cho các component tương tác để đạt chuẩn WCAG AA.",
-          "Review PR của đồng nghiệp và hỗ trợ chuyển hai ứng dụng cũ sang thư viện dùng chung."
+          "Phát hành hơn 20 primitive có type, compound API, variant và theming bằng design token.",
+          "Gắn Storybook + addon a11y vào CI để bẫy focus và lỗi tương phản chặn merge.",
+          "Làm mọi primitive tương tác đạt WCAG AA: thứ tự focus, ARIA và nhánh reduced-motion.",
+          "Chuyển hai ứng dụng cũ sang Nova và cắt hơn một nửa CSS trùng lặp."
         ]
       },
       "proj-02": {
-        "title": "Giao diện Bảng điều khiển Phân tích",
-        "shortDescription": "Bảng điều khiển phân tích nội bộ với biểu đồ tương tác, bộ lọc và chế độ xem theo vai trò.",
-        "fullDescription": "Tham gia xây dựng bảng điều khiển phân tích bằng Next.js cho đội chăm sóc khách hàng. Triển khai các chế độ xem biểu đồ, bộ điều khiển lọc và lớp lấy dữ liệu từ REST API, tập trung vào bố cục responsive cùng trạng thái tải và trạng thái rỗng rõ ràng.",
+        "title": "Pulse Analytics",
+        "shortDescription": "Dashboard chăm sóc khách hàng theo thời gian thực: biểu đồ, bảng và bộ lọc chia sẻ được, dùng chung một cache truy vấn.",
+        "fullDescription": "Phụ trách giao diện Pulse trên Next.js—màn hình đội CS dùng cả ngày. Biểu đồ và bảng đọc cùng cache TanStack Query, bộ lọc nằm trên URL, widget theo vai trò đổi mật độ mà không fork trang. Thiết kế cho Wi-Fi văn phòng chậm: skeleton, prefetch, không nhảy layout khi dữ liệu về.",
         "responsibilities": [
-          "Triển khai chế độ xem biểu đồ và bảng tương tác với Recharts và TanStack Query.",
-          "Xây dựng bộ điều khiển lọc và khoảng ngày với trạng thái đồng bộ trên URL để chia sẻ được.",
-          "Thêm skeleton loader và trạng thái rỗng để cải thiện cảm nhận về thời gian tải.",
-          "Sửa các lỗi bố cục đa trình duyệt và làm bảng điều khiển responsive tới cỡ máy tính bảng."
+          "Thiết kế một lớp dữ liệu để KPI, biểu đồ và bảng không bao giờ lệch nhau.",
+          "Đưa bộ lọc và khoảng ngày lên URL để xem 30 ngày của khách hàng là một bookmark, không phải ảnh chụp.",
+          "Chiến lược prefetch + skeleton để bảng vẫn dùng được trên mạng chậm.",
+          "Widget theo vai trò: quản lý và agent chung một route, mật độ khác, không nhân đôi trang."
         ]
       },
       "proj-03": {
-        "title": "Làm mới Trang Marketing",
-        "shortDescription": "Xây dựng lại trang marketing của công ty trên Next.js, tập trung vào hiệu năng và SEO.",
-        "fullDescription": "Xây dựng lại trang marketing công khai từ một template cũ sang Next.js. Triển khai các khối trang tái sử dụng, tối ưu hình ảnh và cải thiện điểm Lighthouse, dựa trên thiết kế bàn giao từ Figma.",
+        "title": "Commerce Edge",
+        "shortDescription": "Xây lại trang marketing công khai trên Next.js—Lighthouse 68 → 95, section chỉnh được qua CMS, markup sẵn sàng SEO.",
+        "fullDescription": "Gỡ template chậm và xây lại Commerce Edge trên App Router. Tách code theo route, next/image và subset font lo phần hiệu năng; markup ngữ nghĩa và Open Graph lo phần SEO. Marketing sửa copy trên CMS và xuất bản mà không chờ deploy.",
         "responsibilities": [
-          "Chuyển thiết kế trang từ Figma thành các khối Next.js responsive, tái sử dụng được.",
-          "Tối ưu hình ảnh với next/image và lazy-loading, cải thiện điểm hiệu năng Lighthouse từ 68 lên 95.",
-          "Bổ sung markup ngữ nghĩa và metadata để cải thiện SEO và bản xem trước khi chia sẻ mạng xã hội.",
-          "Thiết lập tích hợp CMS đơn giản để bộ phận marketing chỉnh sửa nội dung mà không cần deploy."
+          "Xây lại site thành các section Next.js ghép được, mobile-first, từ Figma.",
+          "Nâng Lighthouse Performance từ 68 lên 95 nhờ ảnh, font và tách route.",
+          "Thêm structured data, metadata và OG để trang sản phẩm rank và chia sẻ sạch.",
+          "Nối CMS để campaign ra như nội dung, không phải ticket frontend."
+        ]
+      },
+      "proj-06": {
+        "title": "Lumen Markets",
+        "shortDescription": "Thương mại điện tử đa tenant cho media số—một app Next.js, nhiều storefront thương hiệu bán ảnh, video, audio và 3D.",
+        "fullDescription": "Lumen là nền tảng marketplace: mỗi tenant có domain riêng, catalog và theme, cùng một lần deploy. Người mua xem trước tài sản, chọn gói bản quyền, thanh toán và tải ngay. Tách tenant là sản phẩm—giỏ hàng, checkout và SEO không rò giữa các cửa hàng. Xây storefront và vỏ tenant bằng Next.js để brand mới là cấu hình, không phải fork.",
+        "responsibilities": [
+          "Resolve tenant từ hostname và nạp token thương hiệu, catalog, locale mà không rebuild.",
+          "PDP với xem trước media, gói bản quyền và tải sau thanh toán—file không lẫn giữa tenant.",
+          "Tách giỏ hàng và Stripe checkout theo cửa hàng để hai site trên cùng app không thấy đơn của nhau.",
+          "Luồng xuất bản cho merchant: tải asset, đặt giá và bản quyền, live trên domain riêng."
         ]
       },
       "proj-04": {
-        "title": "Tính năng Bảng Công việc",
-        "shortDescription": "Tính năng bảng kanban với kéo-thả, được thêm vào ứng dụng năng suất nhóm hiện có.",
-        "fullDescription": "Thêm tính năng bảng kanban vào một ứng dụng React hiện có. Triển khai sắp xếp thẻ bằng kéo-thả, cập nhật lạc quan khi di chuyển thẻ và các hiệu ứng vi tương tác mượt mà với Framer Motion.",
+        "title": "Flowboard",
+        "shortDescription": "Bề mặt kanban gắn vào app có sẵn—kéo thẻ tức thì, cập nhật an toàn khi xung đột, motion tôn trọng reduced-motion.",
+        "fullDescription": "Thêm Flowboard mà không viết lại sản phẩm. Thẻ và cột sắp xếp bằng dnd-kit, Zustand áp chuyển động ngay, API lỗi thì rollback. Motion 200–400ms, không phô; prefers-reduced-motion thì nhảy tức thì. Reducer sắp xếp được test để lỗi kéo-thả không lọt ra production.",
         "responsibilities": [
-          "Xây dựng sắp xếp thẻ và cột bằng kéo-thả với dnd-kit.",
-          "Kết nối cập nhật lạc quan để việc di chuyển thẻ diễn ra tức thì, có hoàn tác khi API lỗi.",
-          "Quản lý trạng thái bảng bằng Zustand và thêm các chuyển động tinh tế với Framer Motion.",
-          "Viết unit test cho reducer của bảng và logic sắp xếp lại."
+          "Kéo-thả thẻ và cột không đụng scroll trang hay chọn nhiều.",
+          "Cập nhật lạc quan với Zustand và rollback khi xung đột—cảm giác native, không 'đang lưu…'.",
+          "Chuyển động Framer Motion tuân thủ reduced-motion thay vì bỏ qua.",
+          "Unit test reducer sắp xếp và các biên (cột rỗng, kéo liên tiếp nhanh)."
         ]
       },
       "proj-05": {
-        "title": "Trang Tài liệu với MDX",
-        "shortDescription": "Trang tài liệu cho lập trình viên xây bằng Next.js và MDX, kèm tìm kiếm.",
-        "fullDescription": "Xây dựng trang tài liệu nội bộ cho lập trình viên bằng Next.js và MDX để kỹ sư có thể xuất bản hướng dẫn bằng Markdown. Bổ sung tìm kiếm phía client và điều hướng thanh bên theo phiên bản.",
+        "title": "Aperture Docs",
+        "shortDescription": "Tài liệu MDX với ví dụ sống, tìm kiếm ưu tiên bàn phím và sidebar theo phiên bản—kỹ sư xuất bản bằng Markdown.",
+        "fullDescription": "Aperture là docs nội bộ: MDX cho hướng dẫn, ví dụ component sống trong trang, tìm kiếm mờ trên tiêu đề và nội dung, mục lục dính khi cuộn. Tác giả thêm file Markdown, không đụng renderer. Xây để onboarding không phụ thuộc người cuối cùng còn nhớ cách repo chạy.",
         "responsibilities": [
-          "Thiết lập render MDX với ánh xạ component tùy chỉnh cho callout và khối mã.",
-          "Triển khai tìm kiếm phía client trên nội dung tài liệu với đối sánh mờ.",
-          "Xây dựng điều hướng thanh bên và mục lục trong trang.",
-          "Viết tài liệu quy trình biên soạn để đồng nghiệp tự thêm trang."
+          "Pipeline MDX với mapping tùy chỉnh cho callout, preview sống và khối mã có type.",
+          "Tìm kiếm mờ, ưu tiên bàn phím trên tiêu đề và nội dung—mở, gõ, nhảy.",
+          "Sidebar theo phiên bản và ToC trong trang để bài dài không lạc hướng.",
+          "Hướng dẫn biên soạn để đồng đội thêm trang mà không sửa cấu hình build."
         ]
       }
     }
@@ -104,34 +113,26 @@
   "experience": {
     "eyebrow": "Kinh nghiệm",
     "title": "Nơi tôi đã đóng góp",
-    "description": "Các vai trò tập trung vào frontend sản phẩm, hệ thống thiết kế và hiệu năng.",
+    "description": "Năm năm xây dựng giao diện sản phẩm với React, Next.js và TypeScript.",
     "present": "Hiện tại",
     "items": {
       "exp-01": {
-        "role": "Kỹ sư Frontend Cao cấp",
-        "location": "Austin, TX (Kết hợp)",
+        "role": "Lập trình viên Frontend",
+        "location": "Hà Nội, Việt Nam",
         "description": [
-          "Dẫn dắt kiến trúc frontend cho nền tảng khách hàng (Next.js App Router, React 19, TypeScript).",
-          "Phụ trách áp dụng hệ thống thiết kế—giảm khoảng 60% giao diện trùng lặp trên bốn nhóm sản phẩm.",
-          "Thúc đẩy chương trình Core Web Vitals; cải thiện LCP trên các tuyến lưu lượng cao 38%.",
-          "Đào tạo kỹ sư về khả năng tiếp cận, ngân sách hiệu năng và thiết kế API component."
+          "Xây dựng và bảo trì các trang sản phẩm với Next.js, React và TypeScript.",
+          "Chuyển thiết kế Figma thành giao diện responsive, dễ tiếp cận với Tailwind CSS.",
+          "Kết nối màn hình với REST API bằng TanStack Query, gồm trạng thái tải và trạng thái rỗng.",
+          "Sửa lỗi, cải thiện Core Web Vitals trên các tuyến chính và review PR của đồng đội."
         ]
       },
       "exp-02": {
-        "role": "Kỹ sư Frontend",
-        "location": "Từ xa",
+        "role": "Lập trình viên Frontend",
+        "location": "Hà Nội, Việt Nam",
         "description": [
-          "Xây dựng các giao diện biên tập và thương mại phục vụ hàng triệu phiên mỗi tháng.",
-          "Giới thiệu thư viện component và kiểm thử hồi quy giao diện trên các trang thương hiệu.",
-          "Phối hợp với đội thiết kế để triển khai bố cục responsive và hướng dẫn chuyển động."
-        ]
-      },
-      "exp-03": {
-        "role": "Kỹ sư Giao diện",
-        "location": "Denver, CO",
-        "description": [
-          "Phát triển các SPA và trang marketing cho khách hàng với sự chú trọng vào độ hoàn thiện và khả năng bảo trì.",
-          "Thiết lập chuẩn linting, định dạng và review PR cho đội frontend."
+          "Phát triển tính năng React cho các giao diện biên tập và marketing từ bản thiết kế.",
+          "Xây dựng các khối UI tái sử dụng và giữ phong cách nhất quán trên các trang thương hiệu.",
+          "Viết unit test và phối hợp với đội thiết kế để hoàn thiện bố cục responsive."
         ]
       }
     }
@@ -149,7 +150,7 @@
   "contact": {
     "eyebrow": "Liên hệ",
     "title": "Cùng nhau tạo nên sản phẩm chất lượng",
-    "description": "Sẵn sàng cho các vai trò frontend cao cấp, tư vấn hệ thống thiết kế và công việc sản phẩm tập trung vào hiệu năng."
+    "description": "Sẵn sàng cho các vai trò frontend và công việc giao diện sản phẩm với React, Next.js và TypeScript."
   },
   "footer": {
     "builtWith": "Xây dựng với Next.js & TypeScript."
