@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
+import { FluidCursor } from "@/components/common/FluidCursor";
 import { Navbar } from "@/components/common/Navbar";
 import { ScrollToTop } from "@/components/common/ScrollToTop";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
@@ -82,6 +83,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           <SmoothScrollProvider>
             <TooltipProvider delay={150}>
+              <FluidCursor />
               <Navbar />
               <main className="flex-1">{children}</main>
               <Footer />
