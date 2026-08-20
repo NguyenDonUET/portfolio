@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { ArrowUpRight, Code2, ExternalLink } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 import type { Project } from "@/types/portfolio";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/Card";
@@ -92,15 +92,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
             {t("live")}
             <ExternalLink className="size-3.5" aria-hidden />
           </a>
-          <a
-            href={project.repoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative z-10 inline-flex items-center gap-1.5 text-muted hover:text-foreground hover:underline"
-          >
-            {t("code")}
-            <Code2 className="size-3.5" aria-hidden />
-          </a>
         </div>
       </Card>
 
@@ -144,15 +135,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </ul>
 
         <DialogFooter className="gap-3 pt-1">
-          <a
-            href={project.repoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-border px-5 text-base font-medium text-foreground transition-colors hover:bg-surface"
-          >
-            {t("viewCode")}
-            <Code2 className="size-4.5" aria-hidden />
-          </a>
           <a
             href={project.liveUrl}
             target="_blank"
