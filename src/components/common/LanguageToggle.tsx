@@ -62,7 +62,7 @@ export function LanguageToggle() {
             disabled={isPending}
             aria-pressed={isActive}
             className={cn(
-              "relative z-10 inline-flex h-7 w-10 items-center justify-center rounded-full text-xs font-semibold uppercase transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+              "relative z-10 inline-flex h-7 w-10 cursor-pointer items-center justify-center rounded-full text-xs font-semibold uppercase transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed",
               isActive
                 ? "text-white"
                 : "text-muted hover:text-foreground",

@@ -49,7 +49,7 @@ export function ThemeToggle() {
       size="icon-lg"
       onClick={toggle}
       aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-      className="size-10 text-muted hover:bg-surface-elevated hover:text-foreground dark:hover:bg-surface-elevated"
+      className="size-10 cursor-pointer text-muted hover:bg-surface-elevated hover:text-foreground dark:hover:bg-surface-elevated"
     >
       {theme === "dark" ? <Sun aria-hidden /> : <Moon aria-hidden />}
     </Button>
