@@ -28,8 +28,7 @@
   "about": {
     "eyebrow": "About",
     "title": "Building interfaces that feel fast and intentional",
-    "p1": "I specialize in React and Next.js product work—design systems, performance budgets, and the craft details that make complex UIs feel simple. I partner closely with design and backend teams to ship durable frontend architecture.",
-    "p2": "Outside feature delivery, I invest in documentation, mentoring, and measurable quality: accessibility checks, Core Web Vitals, and component APIs that scale across squads."
+    "p1": "I specialize in React and Next.js product work—design systems, performance budgets, and the craft details that make complex UIs feel simple. I partner closely with design and backend teams to ship durable frontend architecture."
   },
   "projects": {
     "eyebrow": "Projects",

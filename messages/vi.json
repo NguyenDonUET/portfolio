@@ -28,8 +28,7 @@
   "about": {
     "eyebrow": "Giới thiệu",
     "title": "Xây dựng giao diện nhanh và có chủ đích",
-    "p1": "Tôi chuyên về phát triển sản phẩm với React và Next.js—hệ thống thiết kế, ngân sách hiệu năng và những chi tiết tinh tế giúp các giao diện phức tạp trở nên đơn giản. Tôi phối hợp chặt chẽ với đội thiết kế và backend để xây dựng kiến trúc frontend bền vững.",
-    "p2": "Ngoài việc phát triển tính năng, tôi chú trọng tài liệu, đào tạo và chất lượng đo lường được: kiểm tra khả năng tiếp cận, Core Web Vitals và thiết kế API component có thể mở rộng cho nhiều nhóm."
+    "p1": "Tôi chuyên về phát triển sản phẩm với React và Next.js—hệ thống thiết kế, ngân sách hiệu năng và những chi tiết tinh tế giúp các giao diện phức tạp trở nên đơn giản. Tôi phối hợp chặt chẽ với đội thiết kế và backend để xây dựng kiến trúc frontend bền vững."
   },
   "projects": {
     "eyebrow": "Dự án",
