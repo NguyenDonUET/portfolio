@@ -54,7 +54,7 @@ export function Hero() {
       </div>
 
       <Container>
-        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-8">
+        <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
           <motion.div
             variants={container}
             initial="hidden"
@@ -133,8 +133,12 @@ export function Hero() {
             </motion.div>
           </motion.div>
 
-          <div className="flex justify-center lg:justify-end">
-            <AvatarTilt src={personal.avatarUrl} alt={personal.name} />
+          <div className="order-first flex justify-center lg:order-last lg:justify-end">
+            <AvatarTilt
+              src={personal.avatarUrl}
+              alt={personal.name}
+              className="lg:max-w-md"
+            />
           </div>
         </div>
       </Container>

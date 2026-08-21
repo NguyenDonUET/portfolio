@@ -8,7 +8,7 @@ export const portfolioData: PortfolioData = {
   personal: {
     name: "Don Nguyen",
     email: "alex.rivera@example.com",
-    avatarUrl: "/avatar.png",
+    avatarUrl: "/avatar-3d.png",
     socialLinks: {
       github: "https://github.com/alexrivera",
       linkedin: "https://linkedin.com/in/alexrivera",
