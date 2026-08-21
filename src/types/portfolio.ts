@@ -17,6 +17,8 @@ export interface PersonalInfo {
   email: string;
   /** Square portrait used by the hero 3D-tilt avatar */
   avatarUrl: string;
+  /** Portrait 3D bust used in the About section */
+  aboutAvatarUrl: string;
   socialLinks: SocialLinks;
 }
 

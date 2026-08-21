@@ -9,6 +9,7 @@ export const portfolioData: PortfolioData = {
     name: "Don Nguyen",
     email: "alex.rivera@example.com",
     avatarUrl: "/avatar-3d.png",
+    aboutAvatarUrl: "/about-frame.png",
     socialLinks: {
       github: "https://github.com/alexrivera",
       linkedin: "https://linkedin.com/in/alexrivera",
