@@ -50,8 +50,8 @@ export function Hero() {
     >
       {/* Atmospheric background plane — edge-to-edge, not a card */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-accent/15 via-background to-background" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,transparent_0%,transparent_49%,color-mix(in_oklab,var(--color-border)_60%,transparent)_50%,transparent_51%,transparent_100%)] bg-[size:64px_64px] opacity-40 [mask-image:radial-gradient(ellipse_at_center,black,transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-accent/15 via-background to-background" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,transparent_0%,transparent_49%,color-mix(in_oklab,var(--color-border)_60%,transparent)_50%,transparent_51%,transparent_100%)] bg-size-[64px_64px] opacity-40 mask-[radial-gradient(ellipse_at_center,black,transparent_70%)]" />
       </div>
 
       <Container>
