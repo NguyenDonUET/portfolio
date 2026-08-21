@@ -23,7 +23,8 @@
     "availability": "Available for new projects",
     "viewWork": "View Work",
     "contactMe": "Contact Me",
-    "basedIn": "Based in {location}"
+    "basedIn": "Based in {location}",
+    "scrollCue": "Continue to {section}"
   },
   "about": {
     "eyebrow": "About",

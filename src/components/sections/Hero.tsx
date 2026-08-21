@@ -8,6 +8,7 @@ import { portfolioData } from "@/data/portfolioData";
 import { Container } from "@/components/ui/Container";
 import { AvatarTilt } from "@/components/ui/AvatarTilt";
 import { HeroSocials } from "@/components/sections/HeroSocials";
+import { HeroScrollCue } from "@/components/sections/HeroScrollCue";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -45,7 +46,7 @@ export function Hero() {
     <section
       id="top"
       aria-labelledby="hero-heading"
-      className="relative overflow-hidden pt-16 pb-24 sm:pt-24 sm:pb-32"
+      className="relative flex min-h-[calc(100dvh-4rem)] items-center overflow-hidden pt-12 pb-24"
     >
       {/* Atmospheric background plane — edge-to-edge, not a card */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
@@ -142,6 +143,8 @@ export function Hero() {
           </div>
         </div>
       </Container>
+
+      <HeroScrollCue />
     </section>
   );
 }

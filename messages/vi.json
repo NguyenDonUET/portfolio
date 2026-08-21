@@ -23,7 +23,8 @@
     "availability": "Sẵn sàng nhận dự án mới",
     "viewWork": "Xem dự án",
     "contactMe": "Liên hệ với tôi",
-    "basedIn": "Sống tại {location}"
+    "basedIn": "Sống tại {location}",
+    "scrollCue": "Tiếp tục tới {section}"
   },
   "about": {
     "eyebrow": "Giới thiệu",
